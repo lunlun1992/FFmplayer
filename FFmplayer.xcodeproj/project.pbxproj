@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		34A542011D63063800B0675A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34A542001D63063800B0675A /* main.cpp */; };
+		34A542081D631ACE00B0675A /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A542071D631ACE00B0675A /* SDL2.framework */; };
+		34A5420E1D631C2A00B0675A /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A542091D631C2A00B0675A /* libavcodec.dylib */; };
+		34A5420F1D631C2B00B0675A /* libavdevice.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A5420A1D631C2A00B0675A /* libavdevice.dylib */; };
+		34A542101D631C2B00B0675A /* libavfilter.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A5420B1D631C2A00B0675A /* libavfilter.dylib */; };
+		34A542111D631C2B00B0675A /* libavformat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A5420C1D631C2A00B0675A /* libavformat.dylib */; };
+		34A542121D631C2B00B0675A /* libavutil.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A5420D1D631C2A00B0675A /* libavutil.dylib */; };
+		34A542141D6355BD00B0675A /* libswscale.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 34A542131D6355BD00B0675A /* libswscale.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,13 @@
 /* Begin PBXFileReference section */
 		34A541FD1D63063700B0675A /* FFmplayer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FFmplayer; sourceTree = BUILT_PRODUCTS_DIR; };
 		34A542001D63063800B0675A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		34A542071D631ACE00B0675A /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		34A542091D631C2A00B0675A /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = ../../../../usr/local/lib/libavcodec.dylib; sourceTree = "<group>"; };
+		34A5420A1D631C2A00B0675A /* libavdevice.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavdevice.dylib; path = ../../../../usr/local/lib/libavdevice.dylib; sourceTree = "<group>"; };
+		34A5420B1D631C2A00B0675A /* libavfilter.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavfilter.dylib; path = ../../../../usr/local/lib/libavfilter.dylib; sourceTree = "<group>"; };
+		34A5420C1D631C2A00B0675A /* libavformat.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavformat.dylib; path = ../../../../usr/local/lib/libavformat.dylib; sourceTree = "<group>"; };
+		34A5420D1D631C2A00B0675A /* libavutil.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavutil.dylib; path = ../../../../usr/local/lib/libavutil.dylib; sourceTree = "<group>"; };
+		34A542131D6355BD00B0675A /* libswscale.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libswscale.dylib; path = ../../../../usr/local/lib/libswscale.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A542081D631ACE00B0675A /* SDL2.framework in Frameworks */,
+				34A5420E1D631C2A00B0675A /* libavcodec.dylib in Frameworks */,
+				34A5420F1D631C2B00B0675A /* libavdevice.dylib in Frameworks */,
+				34A542101D631C2B00B0675A /* libavfilter.dylib in Frameworks */,
+				34A542141D6355BD00B0675A /* libswscale.dylib in Frameworks */,
+				34A542111D631C2B00B0675A /* libavformat.dylib in Frameworks */,
+				34A542121D631C2B00B0675A /* libavutil.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +62,13 @@
 		34A541F41D63063700B0675A = {
 			isa = PBXGroup;
 			children = (
+				34A542131D6355BD00B0675A /* libswscale.dylib */,
+				34A542091D631C2A00B0675A /* libavcodec.dylib */,
+				34A5420A1D631C2A00B0675A /* libavdevice.dylib */,
+				34A5420B1D631C2A00B0675A /* libavfilter.dylib */,
+				34A5420C1D631C2A00B0675A /* libavformat.dylib */,
+				34A5420D1D631C2A00B0675A /* libavutil.dylib */,
+				34A542071D631ACE00B0675A /* SDL2.framework */,
 				34A541FF1D63063700B0675A /* FFmplayer */,
 				34A541FE1D63063700B0675A /* Products */,
 			);
@@ -209,6 +237,15 @@
 		34A542051D63063800B0675A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_DYLIB_INSTALL_NAME = "";
+				OTHER_CFLAGS = "-I/usr/local/include";
+				OTHER_LDFLAGS = "-L/usr/local/lib";
+				OTHER_LIBTOOLFLAGS = "";
+				PRELINK_LIBS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +253,15 @@
 		34A542061D63063800B0675A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_DYLIB_INSTALL_NAME = "";
+				OTHER_CFLAGS = "-I/usr/local/include";
+				OTHER_LDFLAGS = "-L/usr/local/lib";
+				OTHER_LIBTOOLFLAGS = "";
+				PRELINK_LIBS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -239,6 +285,7 @@
 				34A542061D63063800B0675A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
